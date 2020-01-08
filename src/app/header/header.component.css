@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon-color-changer{
+    color: rgb(12, 247, 83);
+}
+
+ul {
+  display: flex;
+}

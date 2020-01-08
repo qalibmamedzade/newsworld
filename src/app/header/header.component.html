@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <span>
+    <a [routerLink]="[ '/' ]">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">message</mat-icon>
+      &nbsp;My Messages
+    </a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="userIsAuthenticated">
+      <a mat-button [routerLink]="[ '/create' ]" routerLinkActive="icon-color-changer" title="New Post">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">textsms</mat-icon>
+      </a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button [routerLink]="[ '/signup' ]" routerLinkActive="icon-color-changer" title="Sign Up">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>
+      </a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a mat-button [routerLink]="[ '/login' ]" routerLinkActive="icon-color-changer" title="Login">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">exit_to_app</mat-icon>
+      </a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>

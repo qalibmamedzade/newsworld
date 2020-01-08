@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text{
+    text-align: center;
+    color: rgb(202, 9, 9);
+    font-weight: 500;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+.post-image {
+  width: 250px;
+}
+
+.post-image img{
+  width: 250px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}

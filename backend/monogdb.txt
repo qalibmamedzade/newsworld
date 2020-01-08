@@ -1,0 +1,1 @@
+/Users/arzus/mongodb/bin/mongod.exe --dbpath=/Users/arzus/mongodb-data
